@@ -1,4 +1,7 @@
 {
     "tribuna": "https://servidor22-2.brlogic.com:7076/live?source=8542",
-    "mixrio": "https://24503.live.streamtheworld.com/MIXRIOAAC_SC?dist=MIX-PLAYER"
+    "mixrio": "https://24503.live.streamtheworld.com/MIXRIOAAC_SC?dist=MIX-PLAYER",
+    "radioglobo": "https://26683.live.streamtheworld.com/RADIO_GLOBO_RJAAC.aac?dist=radioscombr&1752014196115",
+    "cbn": "https://26573.live.streamtheworld.com/CBN_RJAAC.aac?dist=radioscombr&1752014261353",
+    "tupi": "https://8923.brasilstream.com.br/stream?1752014294176"
 }
