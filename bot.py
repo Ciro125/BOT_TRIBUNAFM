@@ -164,11 +164,15 @@ async def skip(ctx):
 # !stop – para o áudio (mas continua no canal)
 @bot.command()
 async def stop(ctx):
+    # Sempre limpa a fila
+    if ctx.guild.id in queues:
+        queues[ctx.guild.id].clear()
+
     if ctx.voice_client and ctx.voice_client.is_playing():
         ctx.voice_client.stop()
-        await ctx.send("⏹️ Áudio parado.")
+        await ctx.send("⏹️ Reprodução parada e fila limpa.")
     else:
-        await ctx.send("❌ Nenhum áudio tocando.")
+        await ctx.send("🧹 Fila limpa. Nenhum áudio estava tocando.")
 
 # Comando para sair do canal de voz
 @bot.command()
